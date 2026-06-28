@@ -1,366 +1,397 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div
+        class="container d-flex justify-content-between align-items-center py-4"
+      >
+        <div class="logo d-flex align-items-center gap-2">
+          <img src="./image/logo.avif" alt="logo image" width="100" />
+          <!-- <h2 class="m-0 p-0">Cafe</h2> -->
+        </div>
+        <div class="d-flex flex-md-row flex-lg-column gap-3">
+          <div class="timing d-none d-lg-flex gap-4">
+            <p class="m-0">Mon-Fri: 8am to 2pm</p>
+            <p class="m-0">Sat-Sun: 11am to 4pm</p>
+            <p class="m-0">03001234567</p>
+          </div>
 
-</head>
-<body>
-  <header >
-   <div  class="container  d-flex justify-content-between align-items-center py-4 ">
-     <div class="logo d-flex align-items-center gap-2">
-      <img src="./image/logo.avif" alt="logo image" width="100">
-      <!-- <h2 class="m-0 p-0">Cafe</h2> -->
-    </div>
-    <div class=" d-flex flex-md-row flex-lg-column gap-3">
-      <div class="timing d-none d-lg-flex gap-4">
-        <p class="m-0">Mon-Fri: 8am to 2pm</p>
-        <p class="m-0"> Sat-Sun: 11am to 4pm</p>
-        <p class="m-0" >(012) 6985 236 7512</p>
-      </div>
+          <nav class="navbar navbar-expand-lg">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarMenu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <nav class="navbar navbar-expand-lg">
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarMenu">
+            <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav ms-auto gap-3">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#home">HOME</a>
+                </li>
 
-    <span class="navbar-toggler-icon"></span>
-  </button>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#about">ABOUT</a>
+                </li>
 
-  <div class="collapse navbar-collapse" id="navbarMenu">
-    <ul class="navbar-nav ms-auto gap-3">
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#home">HOME</a>
-      </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#coffee">COFFEE</a>
+                </li>
 
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#about">ABOUT</a>
-      </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#contact">CONTACT</a>
+                </li>
 
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#coffee">COFFEE</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#review">REVIEW</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#blog">BLOG</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    </div>
-   </div>
-  </header>
-
-  <!-- hero section -->
-   <section class="hero-section">
-    <div class="hero-content container">
-      <p class="hero-subtitle">
-      NOW YOU CAN FEEL THE ENERGY
-      </p>
-      <h1>Start your day with <br> a black Coffee</h1>
-      <button class="hero-btn">BUY NOW</button>
-    </div>
-   </section>
-
-   <!-- about -->
-    <section id="about" >
-      <div class="about-section d-lg-flex container gap-2 justify-content-between align-items-center" >
-        <div class="about-video d-flex justify-content-center align-items-center">
-         
-          <a href="https://www.youtube.com/watch?v=ARA0AxrnHdM" target="_blank"><img src="./image/play-icon.avif" alt="" target="_blank"></a>
-         
-        </div> 
-       
-        <div class="about-content ">
-          <p class="about-subtitle m-0">
-            Live Coffee making process.
-          </p>
-          <h2>We Telecast our <br>
-Coffee Making Live</h2>
-<span>We are here to listen from you deliver exellence</span>
-<p class="mt-3 about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-<img src="./image/signature.avif" alt="">
-
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#blog">BLOG</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
+    </header>
 
-
-      
+    <!-- hero section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content container">
+        <p class="hero-subtitle">NOW YOU CAN FEEL THE ENERGY</p>
+        <h1>
+          Start your day with <br />
+          a black Coffee
+        </h1>
+        <button class="hero-btn">BUY NOW</button>
+      </div>
     </section>
-  
+
+    <!-- about -->
+    <section id="about">
+      <div
+        class="about-section d-lg-flex container gap-2 justify-content-between align-items-center"
+      >
+        <div
+          class="about-video d-flex justify-content-center align-items-center"
+        >
+          <a href="https://www.youtube.com/watch?v=ARA0AxrnHdM" target="_blank" >
+            <img src="./image/play-icon.avif" alt="" target="_blank"
+          /></a>
+        </div>
+
+        <div class="about-content">
+          <p class="about-subtitle m-0">Live Coffee making process.</p>
+          <h2>
+            We Telecast our <br />
+            Coffee Making Live
+          </h2>
+          <span>We are here to listen from you deliver exellence</span>
+          <p class="mt-3 about-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod <br />
+            temp or incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim.
+          </p>
+          <img src="./image/signature.avif" alt="" />
+        </div>
+      </div>
+    </section>
+
     <!-- COFFEE SECTION MENU -->
-     <section id="coffee">
-      <div class="coffee container d-flex justify-content-center align-items-center gap-4">
+    <section id="coffee">
+      <div
+        class="coffee container d-flex justify-content-center align-items-center gap-4"
+      >
         <div class="coffee-content text-center mb-3">
           <h2>What kind of Coffee we serve for you</h2>
           <p>Who are in extremely love with eco friendly system.</p>
         </div>
-        
       </div>
-     <div class="container mt-5">
-       <div class="row g-4">
-        <div class=" col-12 col-md-6 col-lg-4 ">
-        <div class="coffee-card">
-            <div class="coffee-type d-flex justify-content-between align-items-center mb-3 ">
-            <h3>Cappuccino</h3>
-            <span class="price">$43</span>
+      <div class="container mt-5">
+        <div class="row g-4">
+          <div class="col-12  col-lg-4">
+            <div class="coffee-card">
+              <div
+                class="coffee-type d-flex justify-content-between align-items-center mb-3"
+              >
+                <h3>Cappuccino</h3>
+                <span class="price">$43</span>
+              </div>
+              <p>
+                Usage of the Internet is becoming more common due to rapid
+                advance.
+              </p>
+            </div>
           </div>
-          <p>Usage of the Internet is becoming more common due to rapid advance.</p>
-        </div>
-
-        </div>
-         <div class=" col-12 col-md-6 col-lg-4 ">
-        <div class="coffee-card">
-            <div class="coffee-type d-flex justify-content-between align-items-center mb-3 ">
-            <h3>Cappuccino</h3>
-            <span class="price">$43</span>
+          <div class="col-12 col-lg-4">
+            <div class="coffee-card">
+              <div
+                class="coffee-type d-flex justify-content-between align-items-center mb-3"
+              >
+                <h3>Affogato</h3>
+                <span class="price">$43</span>
+              </div>
+              <p>
+                Usage of the Internet is becoming more common due to rapid
+                advance.
+              </p>
+            </div>
           </div>
-          <p>Usage of the Internet is becoming more common due to rapid advance.</p>
-        </div>
-
-        </div>
-         <div class=" col-12 col-md-6 col-lg-4 ">
-        <div class="coffee-card">
-            <div class="coffee-type d-flex justify-content-between align-items-center mb-3 ">
-            <h3>Cappuccino</h3>
-            <span class="price">$43</span>
+          <div class="col-12 col-lg-4">
+            <div class="coffee-card">
+              <div
+                class="coffee-type d-flex justify-content-between align-items-center mb-3"
+              >
+                <h3>Americano</h3>
+                <span class="price">$43</span>
+              </div>
+              <p>
+                Usage of the Internet is becoming more common due to rapid
+                advance.
+              </p>
+            </div>
           </div>
-          <p>Usage of the Internet is becoming more common due to rapid advance.</p>
-        </div>
-
-        </div>
-         <div class=" col-12 col-md-6 col-lg-4 ">
-        <div class="coffee-card">
-            <div class="coffee-type d-flex justify-content-between align-items-center mb-3 ">
-            <h3>Cappuccino</h3>
-            <span class="price">$43</span>
+          <div class="col-12 col-lg-4">
+            <div class="coffee-card">
+              <div
+                class="coffee-type d-flex justify-content-between align-items-center mb-3"
+              >
+                <h3>Espresso</h3>
+                <span class="price">$43</span>
+              </div>
+              <p>
+                Usage of the Internet is becoming more common due to rapid
+                advance.
+              </p>
+            </div>
           </div>
-          <p>Usage of the Internet is becoming more common due to rapid advance.</p>
-        </div>
-
-        </div>
-         <div class=" col-12 col-md-6 col-lg-4 ">
-        <div class="coffee-card">
-            <div class="coffee-type d-flex justify-content-between align-items-center mb-3 ">
-            <h3>Cappuccino</h3>
-            <span class="price">$43</span>
+          <div class="col-12 col-lg-4">
+            <div class="coffee-card">
+              <div
+                class="coffee-type d-flex justify-content-between align-items-center mb-3"
+              >
+                <h3>Macchiato</h3>
+                <span class="price">$43</span>
+              </div>
+              <p>
+                Usage of the Internet is becoming more common due to rapid
+                advance.
+              </p>
+            </div>
           </div>
-          <p>Usage of the Internet is becoming more common due to rapid advance.</p>
-        </div>
-
-        </div>
-         <div class=" col-12 col-md-6 col-lg-4 ">
-        <div class="coffee-card">
-            <div class="coffee-type d-flex justify-content-between align-items-center mb-3 ">
-            <h3>Cappuccino</h3>
-            <span class="price">$43</span>
+          <div class="col-12  col-lg-4">
+            <div class="coffee-card">
+              <div
+                class="coffee-type d-flex justify-content-between align-items-center mb-3"
+              >
+                <h3>Mocha</h3>
+                <span class="price">$43</span>
+              </div>
+              <p>
+                Usage of the Internet is becoming more common due to rapid
+                advance.
+              </p>
+            </div>
           </div>
-          <p>Usage of the Internet is becoming more common due to rapid advance.</p>
-        </div>
-
-        </div>
-         <div class=" col-12 col-md-6 col-lg-4 ">
-        <div class="coffee-card">
-            <div class="coffee-type d-flex justify-content-between align-items-center mb-3 ">
-            <h3>Cappuccino</h3>
-            <span class="price">$43</span>
+          <div class="col-12  col-lg-4">
+            <div class="coffee-card">
+              <div
+                class="coffee-type d-flex justify-content-between align-items-center mb-3"
+              >
+                <h3>Coffee Latte</h3>
+                <span class="price">$43</span>
+              </div>
+              <p>
+                Usage of the Internet is becoming more common due to rapid
+                advance.
+              </p>
+            </div>
           </div>
-          <p>Usage of the Internet is becoming more common due to rapid advance.</p>
-        </div>
-
-        </div>
-         <div class=" col-12 col-md-6 col-lg-4 ">
-        <div class="coffee-card">
-            <div class="coffee-type d-flex justify-content-between align-items-center mb-3 ">
-            <h3>Cappuccino</h3>
-            <span class="price">$43</span>
+          <div class="col-12  col-lg-4">
+            <div class="coffee-card">
+              <div
+                class="coffee-type d-flex justify-content-between align-items-center mb-3"
+              >
+                <h3>Piccolo Latte</h3>
+                <span class="price">$43</span>
+              </div>
+              <p>
+                Usage of the Internet is becoming more common due to rapid
+                advance.
+              </p>
+            </div>
           </div>
-          <p>Usage of the Internet is becoming more common due to rapid advance.</p>
-        </div>
-
-        </div>
-         <div class=" col-12 col-md-6 col-lg-4 ">
-        <div class="coffee-card">
-            <div class="coffee-type d-flex justify-content-between align-items-center mb-3 ">
-            <h3>Cappuccino</h3>
-            <span class="price">$43</span>
+          <div class="col-12 col-lg-4">
+            <div class="coffee-card">
+              <div
+                class="coffee-type d-flex justify-content-between align-items-center mb-3"
+              >
+                <h3>Ristretto</h3>
+                <span class="price">$43</span>
+              </div>
+              <p>
+                Usage of the Internet is becoming more common due to rapid
+                advance.
+              </p>
+            </div>
           </div>
-          <p>Usage of the Internet is becoming more common due to rapid advance.</p>
         </div>
-
-        </div>
-    
       </div>
-     </div>
+    </section>
 
-     </section>
-
-<!-- section  -->
-  <section class="coffee2">
-      <div class="coffee container d-flex justify-content-center align-items-center mb-5">
+    <!-- section  -->
+    <section class="coffee2">
+      <div
+        class="coffee container d-flex justify-content-center align-items-center mb-5"
+      >
         <div class="coffee-content text-center">
           <h2>What kind of Coffee we serve for you</h2>
           <p>Who are in extremely love with eco friendly system.</p>
         </div>
-        
       </div>
       <div class="container mt-5">
         <div class="row m-0 g-5">
-          <div class="col-12 col-lg-4 ">
-           
-              <img src="./image/g1.avif" alt="" class="mb-3 img-fluid w-100">
-              <img src="./image/g2.avif" alt="" class="img-fluid w-100">
-           
+          <div class="col-12 col-lg-4">
+            <img src="./image/g1.avif" alt="" class="mb-3 img-fluid w-100" />
+            <img src="./image/g2.avif" alt="" class="img-fluid w-100" />
           </div>
-          <div class="col-12 col-lg-8 ">
-            
-              <img src="./image/g3.avif" alt="" class="mb-3 img-fluid w-100">
+          <div class="col-12 col-lg-8">
+            <img src="./image/g3.avif" alt="" class="mb-3 img-fluid w-100" />
 
-              <div class="row g-4">
-    
-    <div class="col-md-6">
-      <img src="./image/g4.avif" alt="" class="img-fluid w-100">
-    </div>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <img src="./image/g4.avif" alt="" class="img-fluid w-100" />
+              </div>
 
-    <div class="col-md-6">
-      <img src="./image/g5.avif" alt="" class="img-fluid w-100">
-    </div>
-
-  </div>
-
-             
-             
-           
+              <div class="col-md-6">
+                <img src="./image/g5.avif" alt="" class="img-fluid w-100" />
+              </div>
+            </div>
           </div>
-         
         </div>
       </div>
-     
+    </section>
 
-      
-
-     </section>
-
-
-
-     <!-- Blogs -->
-       <section class="coffee2">
-      <div class="coffee container d-flex justify-content-center align-items-center mb-5">
+    <!-- Blogs -->
+    <section id="blog" class="coffee2" >
+      <div
+        class="coffee container d-flex justify-content-center align-items-center mb-5"
+      >
         <div class="coffee-content text-center">
           <h2>What kind of Coffee we serve for you</h2>
           <p>Who are in extremely love with eco friendly system.</p>
         </div>
-        
       </div>
-     <div class="blog-section container ">
-    <div class="row g-5">
-      <div class="col-12 col-lg-6">
-          <div class="blog-content  ">
-<img src="./image/b1.avif" alt="" class="w-100 mb-5 img-fluid me-5">
-        <div class="blog-btn  ">
-          <button >Travel</button>
-          <button>Life Style</button>
-        </div>
-        <h3>Portable latest Fashion for young women</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-        <h6>31st January, 2032</h6>
-      </div>
-       
-      </div>
-       <div class="col-12 col-lg-6">
-          <div class="blog-content  ">
-<img src="./image/b2.avif" alt="" class="w-100 mb-5 img-fluid me-5">
-        <div class="blog-btn  ">
-          <button >Travel</button>
-          <button>Life Style</button>
-        </div>
-        <h3>Portable latest Fashion for young women</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-        <h6>31st January, 2032</h6>
-      </div>
-       
-      </div>
-
-    </div>
-      
-     </div>
-     
-
-      
-
-     </section>
-<hr>
-
-     <!-- footer -->
-
-     <section class="footer">
-      <div class="container">
+      <div class="blog-section container">
         <div class="row g-5">
-          <div  class="col-12 col-md-6 col-lg-4" >
-            <div class="footer-content">
-              <h3>About Us</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-              <p class="footer-text">Copyright ©2026 All rights reserved | This template is made with  by <span>Colorlib</span></p>
+          <div class="col-12 col-lg-6">
+            <div class="blog-content">
+              <img
+                src="./image/b1.avif"
+                alt=""
+                class="w-100 mb-5 img-fluid me-5"
+              />
+              <div class="blog-btn">
+                <button>Travel</button>
+                <button>Life Style</button>
+              </div>
+              <h3>Portable latest Fashion for young women</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+              <h6>31st January, 2032</h6>
             </div>
           </div>
-            <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-lg-6">
+            <div class="blog-content">
+              <img
+                src="./image/b2.avif"
+                alt=""
+                class="w-100 mb-5 img-fluid me-5"
+              />
+              <div class="blog-btn">
+                <button>Travel</button>
+                <button>Life Style</button>
+              </div>
+              <h3>Portable latest Fashion for young women</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+              <h6>31st January, 2032</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- footer -->
+
+    <section id="contact" class="footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer-content">
+              <h3>About Us</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore dolore magna aliqua.
+              </p>
+              <p class="footer-text">
+                Copyright ©2026 All rights reserved | This template is made with
+                by <span>Colorlib</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="footer-content">
               <h3>Newsletter</h3>
               <p>Stay updated with our latest</p>
-             <div class="newsletter d-flex mt-2">
-              <input type="email" placeholder="Enter Enmail">
-              <button>→</button>
-             </div>
+              <div class="newsletter d-flex mt-2">
+                <input type="email" placeholder="Enter Enmail" />
+                <button>→</button>
+              </div>
             </div>
           </div>
-      <div class="col-12 col-lg-3">
-        <div class="footer-content">
-          <h3>Follow Us</h3>
-          <p>Let us be social</p>
-        </div>
-      <div class="social-icons d-flex gap-4">
-  <i class="fa-brands fa-facebook-f"></i>
-  <i class="fa-brands fa-twitter"></i>
-  <i class="fa-brands fa-instagram"></i>
-</div>
-
-
-      </div>
+          <div class="col-12 col-lg-3">
+            <div class="footer-content">
+              <h3>Follow Us</h3>
+              <p>Let us be social</p>
+            </div>
+            <div class="social-icons d-flex gap-4">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
         </div>
       </div>
-     </section>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
